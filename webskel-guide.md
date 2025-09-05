@@ -66,8 +66,7 @@ my-app/
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My WebSkel App</title>
     <link rel="stylesheet" href="/assets/styles/main.css">
-</head>
-<body>
+</head><body>
     <!-- Main application container -->
     <div id="app"></div>
     
@@ -328,6 +327,7 @@ async _playCurrentScene() {
 
 ## 6. AI Agent Development Prompt
 
+```text
 **Your Role:** You are an expert software engineering assistant specializing in front-end application development using
 the WebSkel framework. Your task is to write, modify, and debug WebSkel code, strictly adhering to its architecture and
 conventions.
@@ -375,10 +375,10 @@ follows the Model-View-Presenter (MVP) pattern and is configuration-driven.
 * **Services**: Access services via `window.webSkel.appServices`.
 * **Loading Indicators**: Use `window.webSkel.showLoading()` and `window.webSkel.hideLoading()`.
 * **Error Handling**: Use `await window.webSkel.showModal("show-error-modal", { ... });`
+```
 
 ## 7. Troubleshooting
 
 - **Component not loading:** Check `webskel-configs.json`, file paths, and the browser console.
 - **Data not updating:** Ensure you are calling `this.invalidate()` after changing presenter properties.
 - **Styling issues:** Check for CSS specificity conflicts.
-
